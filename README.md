@@ -24,32 +24,31 @@ Authorized person will be able to track location of employees and calculate cove
           Allow authorized user only to change in database.
 			
 4.2 History module
-To show the billing history of payment amount,payment date,consumptions of electricity etc.
+		To show the billing history of payment amount,payment date,consumptions of electricity etc.
            	
-
 4.3 Bill generator module
-Bill will be generated using unique meter number, payment amount,name of the customer and meter readings. 
+		Bill will be generated using unique meter number, payment amount,name of the customer and meter readings. 
           
 4.4 E-wallet/payment module
-Customer can select among various payment wallets.           
+		Customer can select among various payment wallets.           
 
 4.5 Complain module
-Customer can filter requests type and locate the areas and details.          
+		Customer can filter requests type and locate the areas and details.          
           
 4.6 Map module
-It will use google API and show the path of covered area by employees.
+		It will use google API and show the path of covered area by employees.
 
 5. Basic Requirements:
-5.1 Hardware Requirement:-
-CPU type	       :-	Intel Pentium 4 or above
-Clock speed      :-	1.8 GHz or above
-Ram size	       :-	512 MB or above
-Hard disk	       :-	40 GB or above
-Operating Device :-	Android	
+		5.1 Hardware Requirement:-
+		CPU type	       :-	Intel Pentium 4 or above
+		Clock speed 		 :-	1.8 GHz or above
+		Ram size	       :-	512 MB or above
+		Hard disk	       :-	40 GB or above
+		Operating Device :-	Android	
 
 5.2 Software Requirement:-
-Software	        :-	Android Studio,Java JDK
-Language          :-	Java,XML,SQLite
+		Software	        :-	Android Studio,Java JDK
+		Language          :-	Java,XML,SQLite
 
 6. Feasibility:
          The main objective of the feasibility study is to test the Technical, Operational and Economical feasibility for adding new modules and debugging old running system. All system is feasible if they are unlimited resources and infinite time. There are aspects in the feasibility study portion of the preliminary investigation.
