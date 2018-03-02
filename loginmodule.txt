@@ -1,0 +1,541 @@
+--------------------------------------------------------------
+ 		activty_main.xml
+
+
+-------------------------------------------------------------
+
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.prashantgajera.meterchecker.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="-54dp"
+        android:background="#5fb0c9"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="120dp"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_margin="22dp"
+                android:background="#d67601"
+                android:text="User Sign in"
+                android:id="@+id/userbtn"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_margin="22dp"
+                android:background="#d67601"
+                android:text="Admin Sign In"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:id="@+id/adminbtn"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+     </RelativeLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+---------------------------------------------------------------------
+		adminlogin.xml
+-----------------------------------------------------------------------
+
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="-54dp"
+        android:background="#5fb0c9"
+        android:orientation="vertical"
+        android:paddingTop="39dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="85dp"
+            android:background="#ffff"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+
+
+                <EditText
+                    android:id="@+id/adminid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:drawableLeft="@drawable/user1"
+                    android:hint="  Admin Id"
+                    android:singleLine="true" />
+
+
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableLeft="@drawable/key1"
+                    android:hint=" Password"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:paddingTop="5dp"
+                    android:text="Forgot Password?" />
+
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:id="@+id/signin"
+                    android:layout_height="35dp"
+                    android:layout_margin="22dp"
+                    android:background="#d67601"
+                    android:text="Sign in"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Or"
+                    android:id="@+id/text"
+                    android:layout_gravity="center_horizontal"/>
+                <Button
+                    android:layout_width="fill_parent"
+                    android:id="@+id/createacc"
+                    android:layout_height="35dp"
+                    android:layout_margin="22dp"
+                    android:background="#d67601"
+                    android:text="Create Account"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/user_profile_photo"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/logo"
+            android:elevation="4dp"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+
+-----------------------------------------------------------------
+
+
+		adminsignup.xml
+-------------------------------------------------------------------
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="-54dp"
+        android:background="#5fb0c9"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="120dp"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name:"
+                    android:textSize="20dp"
+                    android:id="@+id/name1"/>
+
+                <EditText
+                    android:id="@+id/name2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/name1"
+                    android:layout_alignBottom="@+id/name1"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_toEndOf="@+id/name1"
+                    android:layout_toRightOf="@+id/name1"
+                    android:hint="      Enter name"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/admind"
+                    android:layout_alignBottom="@+id/admind"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="Admin Id:"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:id="@+id/admind"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/name2"
+                    android:layout_alignStart="@+id/name2"
+                    android:layout_below="@+id/name2"
+                    android:hint="      Admin Id"
+                    android:paddingTop="20dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/passw"
+                    android:layout_alignBottom="@+id/passw"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="Password:"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:id="@+id/passw"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/admind"
+                    android:layout_toEndOf="@+id/textView2"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:hint="  Password"
+                    android:paddingTop="20dp"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
+
+
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/passw"
+                    android:background="#d67601"
+                    android:text="Sign up"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+
+---------------------------------------------------------------------
+		createaccount.xml
+-------------------------------------------------------------------------
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="-54dp"
+        android:background="#5fb0c9"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="120dp"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textSize="20dp"
+                android:id="@+id/name1"/>
+
+            <EditText
+                android:id="@+id/name2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/name1"
+                android:layout_alignBottom="@+id/name1"
+                android:layout_marginLeft="22dp"
+                android:layout_marginStart="22dp"
+                android:layout_toEndOf="@+id/name1"
+                android:layout_toRightOf="@+id/name1"
+                android:hint="      Enter name"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/mobno"
+                android:layout_alignBottom="@+id/mobno"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="Mob no:"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/mobno"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name2"
+                android:layout_alignStart="@+id/name2"
+                android:layout_below="@+id/name2"
+                android:hint="      Mobile No"
+                android:inputType="phone"
+                android:paddingTop="20dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editText"
+                android:layout_alignBottom="@+id/editText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="Password:"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobno"
+                android:layout_toEndOf="@+id/textView2"
+                android:layout_toRightOf="@+id/textView2"
+                android:hint="  Password"
+                android:paddingTop="20dp"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+
+            <Button
+                android:id="@+id/mybutton"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/editText"
+                android:background="#d67601"
+                android:text="Sign up"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
+
+
+--------------------------------------------------------
+		userlogin.xml
+--------------------------------------------------------
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="-54dp"
+        android:background="#5fb0c9"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="85dp"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:id="@+id/mobno"
+                    android:drawableLeft="@drawable/user"
+                    android:hint="     Mobile No."
+                    android:inputType="phone"
+                    android:singleLine="true" />
+
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableLeft="@drawable/key1"
+                    android:hint=" Password"
+                    android:id="@+id/password"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:paddingTop="5dp"
+                    android:text="Forgot Password?" />
+
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="22dp"
+                    android:background="#d67601"
+                    android:text="Create Account"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:id="@+id/caccount"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:id="@+id/rtext"
+                    android:text="Already have an account?"
+                    android:textSize="15dp"
+                    android:textColor="#d67601" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="22dp"
+                    android:background="#d67601"
+                    android:text="Sign In"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:id="@+id/signin"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/user_profile_photo"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/logo"
+            android:elevation="4dp"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
