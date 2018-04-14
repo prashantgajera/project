@@ -108,6 +108,7 @@ li a:active
     background-attachment: scroll; 
     overflow: hidden;
     font-size: 18px;
+  
     
 }
 #d:hover{
@@ -122,10 +123,8 @@ li a:active
     background-color:orange;
     border:  1px;
     border-radius:5px ; 
-    text-align: left;
+    text-align: center;
     cursor:pointer;
-
-
 }
 
 
@@ -169,6 +168,7 @@ table{
    
 
 }
+
 
 #tra2{
     opacity: 0.3;

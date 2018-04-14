@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
@@ -116,7 +119,7 @@ width:100%;}
     var myname=document.getElementById("userid");
     var mono =document.getElementById("mobno");
     var eml =document.getElementById("email");
-    if(myname.innerHTML=="Must be 3+ letters" || mono.innerHTML=="mob must be 10 no" || eml.innerHTML=="Invalid email")
+    if(myname.innerHTML=="Must be 3+ letters" || mono.innerHTML=="mob must be 10 no" || eml.innerHTML=="Invalid email" || mono.innerHTML=="Valid | Mobile no is already present" || myname.innerHTML=="Valid | Name is present in Database" || eml.innerHTML=="Valid | Email is already present")
     {
       alert("Fill Valid Information");  
     }
@@ -153,11 +156,14 @@ width:100%;}
             xhttp.send();
     }
    </script>
+   <?php
+   include 'cookie.php';
+   ?>
 <div id="img" onclick="prashant.html">
     <div class="area" >Medi TECH</div>
 <ul>
     <li><div id="shape"><a href="prashant.html" >Home</a></div></li>
-    <li><div id="shape"><a href="webform.html" >Patient form</a></div></li>
+    <li><div id="shape"><a href="webform.php" >Patient form</a></div></li>
     <li><div id="shape"><a href="checker.html" >Deases</a></div></li>
     <li><div id="shape"><a href="about.html" >About us</a></div></li>
 </ul>
@@ -178,7 +184,7 @@ width:100%;}
 
 <tr>
 <td ><font>Mobile No :</font></td>
-<td><input type="number" name="mobno" id="mono" onblur="myform('mobno',this.value)"><span id="mobno"></span></td>
+<td><input type="text" name="mobno" id="mono" onblur="myform('mobno',this.value)"><span id="mobno"></span></td>
 </tr>
 <tr>
 <td ><font>Email :</font></td>
@@ -272,8 +278,9 @@ width:100%;}
 <div id="we"><img src="prarthu.jpg" height="150px" width="150px">&nbsp;&nbsp;
 <img src="prashu.jpg" width="150px" height="150px"><br>&nbsp;&nbsp;Prarthana Raval  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Prashant Gajera</div>
 <div id="icon1">
-<div class="social-btns"><a class="btn facebook" href="#"><i class="fa fa-facebook"></i></a><a class="btn twitter" href="#"><i class="fa fa-twitter"></i></a><a class="btn google" href="#"><i class="fa fa-google"></i></a><a class="btn skype" href="#"><i class="fa fa-skype"></i></a>
+<div class="social-btns"><a class="btn facebook" href="https://www.facebook.com/gajera.prashant.9"><i class="fa fa-facebook"></i></a><a class="btn twitter" href="https://twitter.com/login?lang=en"><i class="fa fa-twitter"></i></a><a class="btn google" href="https://plus.google.com/discover"><i class="fa fa-google"></i></a><a class="btn skype" href="https://www.skype.com/en/"><i class="fa fa-skype"></i></a>
 </div>
   </div>
+
 </body>
 </html>
